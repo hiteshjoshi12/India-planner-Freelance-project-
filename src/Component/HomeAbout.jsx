@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HomeAbout = () => {
   return (
@@ -52,13 +53,13 @@ const HomeAbout = () => {
               ))}
             </div>
 
-            <a 
-              href="/who-we-are" 
+            <Link
+              to="/who-we-are" 
               className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 px-8 rounded-full transition-all hover:gap-4 hover:shadow-lg"
             >
               Read More About Us
               <ArrowRight size={18} />
-            </a>
+            </Link>
           </div>
 
         </div>
